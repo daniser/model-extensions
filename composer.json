@@ -1,0 +1,43 @@
+{
+    "name": "daniser/model-extensions",
+    "description": "Collection of useful Eloquent Model extensions",
+    "type": "library",
+    "keywords": ["eloquent", "model", "extensions", "traits", "concerns"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/daniser/model-extensions/issues",
+        "source": "https://github.com/daniser/model-extensions"
+    },
+    "authors": [
+        {
+            "name": "Sergey Danilchenko",
+            "email": "daniser@mail.ru"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "illuminate/database": "^5.7.0|^6.0|^7.0",
+        "illuminate/support": "^5.7.0|^6.0|^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0|^8.0|^9.0"
+    },
+    "suggest": {
+	    "ramsey/uuid": "Required to use UUID primary keys (^3.7|^4.0)."
+    },
+    "autoload": {
+        "psr-4": {
+            "Daniser\\ModelExtensions\\Concerns\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Daniser\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
