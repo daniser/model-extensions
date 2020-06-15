@@ -1,6 +1,6 @@
 <?php
 
-namespace Daniser\ModelExtensions\Concerns;
+namespace TTBooking\ModelExtensions\Concerns;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Str;

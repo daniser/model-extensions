@@ -1,17 +1,17 @@
 {
-    "name": "daniser/model-extensions",
+    "name": "ttbooking/model-extensions",
     "description": "Collection of useful Eloquent Model extensions",
     "type": "library",
     "keywords": ["eloquent", "model", "extensions", "traits", "concerns"],
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/daniser/model-extensions/issues",
-        "source": "https://github.com/daniser/model-extensions"
+        "issues": "https://github.com/ttbooking/model-extensions/issues",
+        "source": "https://github.com/ttbooking/model-extensions"
     },
     "authors": [
         {
             "name": "Sergey Danilchenko",
-            "email": "daniser@mail.ru"
+            "email": "s.danilchenko@ttbooking.ru"
         }
     ],
     "require": {
@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Daniser\\ModelExtensions\\Concerns\\": "src/"
+            "TTBooking\\ModelExtensions\\Concerns\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Daniser\\Tests\\": "tests/"
+            "TTBooking\\Tests\\": "tests/"
         }
     },
     "config": {
