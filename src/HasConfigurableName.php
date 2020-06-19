@@ -24,11 +24,11 @@ trait HasConfigurableName
 
     private function suggestNameSources(): array
     {
-        $suggestions = ['database.model_table_mapping.'.__CLASS__];
+        $suggestions = ['database.model_table_mapping.'.static::class];
 
         if ($nameSource = $this->getNameSource()) {
             $suggestions[] = $nameSource;
-        } elseif (count($components = explode('\\', __CLASS__)) > 2 || $components[0] !== 'App') {
+        } elseif (count($components = explode('\\', static::class)) > 2 || $components[0] !== 'App') {
             $suggestions[] = Str::kebab($components[1]).'.'.Str::snake(end($components).'_table');
         }
 
